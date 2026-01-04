@@ -1,14 +1,88 @@
 {
   "products": [
-    {"keywords": ["amplifier", "audio system"], "standard": "IS 616:2010", "authority": "BIS (CRS)", "wireless": "Check BT", "waste": "E-Waste 2022"},
-    {"keywords": ["laptop", "notebook", "tablet"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
-    {"keywords": ["mobile phone", "handset"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
-    {"keywords": ["power bank", "portable battery"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "Battery Waste 2022"},
-    {"keywords": ["cctv", "ip camera"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": "Optional", "waste": "E-Waste 2022"},
-    {"keywords": ["smart watch", "fitness band"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
-    {"keywords": ["led lamp", "led bulb"], "standard": "IS 16102(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "E-Waste 2022"},
-    {"keywords": ["ups", "inverter"], "standard": "IS 16242(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "E-Waste 2022"},
-    {"keywords": ["mri", "ct scanner", "ultrasound"], "standard": "MDR 2017 (Class B/C)", "authority": "CDSCO", "wireless": "Check RF", "waste": "E-Waste 2022"},
-    {"keywords": ["drone", "uav"], "standard": "DGCA Restricted", "authority": "WPC/DGCA", "wireless": true, "waste": "E-Waste 2022"}
+    {
+      "keywords": ["amplifier", "audio system", "television", "plasma tv", "lcd tv", "led tv", "video player", "radio set", "hi-fi system", "bluetooth speaker", "wireless headphone"],
+      "standard": "IS 616:2017",
+      "authority": "BIS (CRS) / WPC ETA",
+      "wireless": "Required for BT/Wi-Fi",
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["laptop", "notebook", "tablet", "phablet", "personal computer", "mainframe", "minicomputer", "smart watch", "fitness band"],
+      "standard": "IS 13252(Part 1):2010",
+      "authority": "BIS (CRS) / WPC ETA",
+      "wireless": true,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["mobile phone", "handset", "telephone", "cordless phone", "cellular phone"],
+      "standard": "IS 13252(Part 1):2010 / IS 16333",
+      "authority": "BIS (CRS) / WPC ETA",
+      "wireless": true,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["printer", "plotter", "scanner", "copying machine", "facsimile", "set top box", "router", "modem", "gps", "external hard disk", "ssd"],
+      "standard": "IS 13252(Part 1):2010",
+      "authority": "BIS (CRS) / WPC ETA (if wireless)",
+      "wireless": "Optional",
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["power bank", "portable battery", "automotive battery", "electric vehicle battery", "industrial battery", "secondary cell", "lithium cell"],
+      "standard": "IS 16046 / IS 16270",
+      "authority": "BIS (CRS) / CPCB EPR",
+      "wireless": false,
+      "waste": "Battery Waste 2022"
+    },
+    {
+      "keywords": ["led lamp", "led bulb", "led luminaire", "flood light", "lighting chain", "led module"],
+      "standard": "IS 16102 / IS 10322 / IS 16103",
+      "authority": "BIS (CRS)",
+      "wireless": false,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["ups", "inverter", "pv inverter", "solar panel", "photovoltaic module"],
+      "standard": "IS 16242 / IS 14286 / IS 16221",
+      "authority": "BIS (CRS)",
+      "wireless": false,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["microwave oven", "induction stove", "rice cooker", "electric kettle", "washing machine", "refrigerator", "air conditioner"],
+      "standard": "IS 302-2 Series",
+      "authority": "BIS (CRS)",
+      "wireless": false,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["mri", "ct scanner", "ultrasound", "pet scanner", "radiotherapy", "cardiology", "dialysis", "pulmonary ventilator"],
+      "standard": "MDR 2017 (Class B/C/D)",
+      "authority": "CDSCO",
+      "wireless": "Check RF Components",
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["drone", "uav", "radar", "walkie-talkie"],
+      "standard": "DGCA Restricted / WPC Scrutiny",
+      "authority": "WPC / DGCA",
+      "wireless": true,
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["cctv", "ip camera", "digital camera", "video camera", "webcam"],
+      "standard": "IS 13252 / IS 616",
+      "authority": "BIS (CRS) / WPC ETA (if wireless)",
+      "wireless": "Optional",
+      "waste": "E-Waste 2022"
+    },
+    {
+      "keywords": ["video game", "game console", "electronic toy", "rc car", "rc boat"],
+      "standard": "IS 616 / TLSEW Categories",
+      "authority": "BIS (CRS) / WPC ETA (if wireless)",
+      "wireless": "Optional",
+      "waste": "E-Waste 2022"
+    }
   ]
 }
