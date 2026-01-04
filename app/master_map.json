@@ -1,0 +1,14 @@
+{
+  "products": [
+    {"keywords": ["amplifier", "audio system"], "standard": "IS 616:2010", "authority": "BIS (CRS)", "wireless": "Check BT", "waste": "E-Waste 2022"},
+    {"keywords": ["laptop", "notebook", "tablet"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
+    {"keywords": ["mobile phone", "handset"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
+    {"keywords": ["power bank", "portable battery"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "Battery Waste 2022"},
+    {"keywords": ["cctv", "ip camera"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": "Optional", "waste": "E-Waste 2022"},
+    {"keywords": ["smart watch", "fitness band"], "standard": "IS 13252(Part 1)", "authority": "BIS (CRS)", "wireless": true, "waste": "E-Waste 2022"},
+    {"keywords": ["led lamp", "led bulb"], "standard": "IS 16102(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "E-Waste 2022"},
+    {"keywords": ["ups", "inverter"], "standard": "IS 16242(Part 1)", "authority": "BIS (CRS)", "wireless": false, "waste": "E-Waste 2022"},
+    {"keywords": ["mri", "ct scanner", "ultrasound"], "standard": "MDR 2017 (Class B/C)", "authority": "CDSCO", "wireless": "Check RF", "waste": "E-Waste 2022"},
+    {"keywords": ["drone", "uav"], "standard": "DGCA Restricted", "authority": "WPC/DGCA", "wireless": true, "waste": "E-Waste 2022"}
+  ]
+}

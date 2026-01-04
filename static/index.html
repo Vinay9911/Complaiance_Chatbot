@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India Compliance Bot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h2 class="mb-4">Hardware Compliance Roadmap (India)</h2>
+        <div class="input-group mb-3">
+            <input type="text" id="pname" class="form-control" placeholder="e.g. Smart Watch or Drone">
+            <button onclick="check()" class="btn btn-primary">Analyze Compliance</button>
+        </div>
+        <div id="results" class="mt-4"></div>
+    </div>
+
+    <script>
+        async function check() {
+            const name = document.getElementById('pname').value;
+            const res = await fetch('/api/check', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name: name})
+            });
+            const data = await res.json();
+            
+            let html = `<div class="card p-4 shadow-sm">`;
+            if(data.is_known) {
+                html += `<h4>✅ Mandatory Standard: ${data.rule.standard}</h4>
+                         <p><b>Authority:</b> ${data.rule.authority}</p>
+                         <p><b>Wireless:</b> ${data.rule.wireless ? 'WPC ETA Required' : 'N/A'}</p>
+                         <p><b>Environment:</b> ${data.rule.waste}</p>`;
+            } else {
+                html += `<div class="alert alert-warning">Unknown product. Showing closest rules from official documents.</div>`;
+            }
+            html += `<hr><h5>Procedure Details from Manuals:</h5><p>${data.manual_details[0]}</p></div>`;
+            document.getElementById('results').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
